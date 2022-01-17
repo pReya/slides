@@ -1,7 +1,12 @@
-### Matrix: Die Messenger-Zukunft?
+---
+title: "Matrix: One messenger to rule them all?"
+theme: white
+---
+### Matrix: One messenger to rule them all?
 
 ![](images/matrix_logo.svg)<!-- .element height="50%" width="50%" -->
 
+by Moritz Stückler ([Twitter](https://twitter.com/MoStueck), [GitHub](https://github.com/pReya))
 
 ---
 > „Matrix is an open network for secure, decentralised, real-time communication."
