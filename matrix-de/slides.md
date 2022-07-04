@@ -49,7 +49,7 @@ Kurzer Überblick über die Kategorisierung von Messengern
 ### Dezentralisiert + Föderiert
 <div style="font-size: 1.4rem">z.B. XMPP, Matrix</div>
 
-![](images/diagram_federated.png)
+![](images/diagram_federated.png)<!-- .element height="500px" -->
 
 
 ---
