@@ -1,15 +1,20 @@
 ---
-title: "Matrix: One messenger to rule them all?"
+title: "Matrix: Das Ende des Messenger-Wahnsinns?"
 theme: white
 ---
 ### Matrix: Das Ende des Messenger-Wahnsinns?
 
-![](images/matrix_logo.svg)<!-- .element height="50%" width="50%" -->
+![](images/matrix_logo.svg)<!-- .element height="30%" width="30%" -->
 
-von Moritz Stückler ([Twitter](https://twitter.com/MoStueck), [GitHub](https://github.com/pReya))
+von Moritz Stückler<br/> 
+<span style="font-size: 1.4rem; line-height: 1.3;">[Twitter (@MoStueck)](https://twitter.com/MoStueck)<br/>
+[Mastodon (@preya@mastodon.social)](https://mastodon.social/@preya)<br/>
+[GitHub (pReya)](https://github.com/pReya)</span>
 
 ---
-> „Matrix is an open network for secure, decentralised, real-time communication."
+> „Matrix is an open network for secure, decentralised, real-time communication.“
+>
+<span style="font-size: 1.4rem; color: rgba(0,0,0,0.5)">*Quelle: matrix.org*</span>
 
 ---
 ### Was ist Matrix?
@@ -25,58 +30,78 @@ von Moritz Stückler ([Twitter](https://twitter.com/MoStueck), [GitHub](https://
 - Verschlüsselung und Datenhoheit
 - Single Point of Failure / Zentralisierung / Zensur
 
+Note:
+Kurzer Überblick über die Kategorisierung von Messengern
+
+---
+### Zentralisiert
+<div style="font-size: 1.4rem">z.B. WhatsApp, Telegram, Signal, Slack, Discord</div>
+
+![](images/diagram_centralised.png)
+
+---
+### Dezentralisiert
+<div style="font-size: 1.4rem">z.B. Mattermost, Rocket.Chat, IRC</div>
+
+![](images/diagram_decentralised.png)
+
+---
+### Dezentralisiert + Föderiert
+<div style="font-size: 1.4rem">z.B. XMPP, Matrix</div>
+
+![](images/diagram_federated.png)
+
+
 ---
 ### Kategorisierung von Messengern
 |                 | IRC  | Telegram, WhatsApp, Signal | Slack, Discord | Matrix |
 |-----------------|------|----------------------------|----------------|--------|
-| Clientwahl      | Ja   | Nein                       | Nein           | Ja     |
-| Dezentral       | Ja   | Nein                       | Nein           | Ja     |
-| Föderiert       | Nein | Nein                       | Nein           | Ja     |
-| Raumverzeichnis | Ja   | Nein                       | Ja             | Ja     |
-| Verschlüsselt   | Nein | Teils                      | Nein           | Ja     |
+| Dezentral       | ✅   | ❌                          | ❌             | ✅     |
+| Föderiert       | ❌   | ❌                          | ❌             | ✅     |
+| Clientwahl      | ✅   | ❌                          | ❌             | ✅     |
+| Räume           | ✅   | ❌                          | ✅             | ✅     |
+| Verschlüsselt   | ❌   | Teils                       | ❌             | ✅     |
 
+Note:
+Noch ein paar weitere Kritierien:
+- Verschiedene Clients möglich
+- Räume oder monothematisch
+- End to End Verschlüsselung
 
-
----
-### Structure overview
-![](images/network_zurich.png)
-
+Um Föderation in der Praxis zu verstehen: Analogie E-Mail
 ---
 ### Analogie: E-Mail
-Alle E-Mail-Nutzer können sich Mails schicken – egal ob Gmail, Yahoo oder GMX -> genau so bei Matrix: alle Nutzer können miteinander schreiben, egal wo ihr Account liegt
+<div style="font-size: 1.4rem">
+<strong>Alle</strong> E-Mail-Nutzer können sich Mails schicken – egal ob Gmail, Yahoo oder GMX<br/> <strong>Alle</strong> Matrix-Nutzer können miteinander schreiben, egal wo ihr Account liegt
+</div>
 
-|          | E-Mail              | Matrix                             |
-|----------|---------------------|------------------------------------|
-| Protocol | SMTP, IMAP          | Matrix                             |
-| Server   | Mailserver          | Homeserver                         |
-| Client   | Apple Mail, Outlook | Element, FluffyChat, Hydrogen      |
-| IDs      | E-Mail address      | MXID                               |
-| Provider | GMX, Gmail          | matrix.org, tchncs.de, mozilla.org |
+|           | E-Mail              | Matrix                             |
+|-----------|---------------------|------------------------------------|
+| Protokoll | SMTP, IMAP          | Matrix                             |
+| Server    | Mailserver          | Homeserver                         |
+| Client    | Apple Mail, Outlook | Element, FluffyChat, Hydrogen      |
+| IDs       | E-Mail-Adresse      | MXID                               |
+| Anbieter  | GMX, Gmail          | matrix.org, tchncs.de, mozilla.org |
 
-
-<!-- ---
-### How does it compare to...?
-- IRC: Only decentralised, not federated (need to connect to specific servers/communities)
-- Telegram, WhatsApp, Signal, Threema:
-  - Only one single client app (no choice)
-  - Centralised servers (privacy)
-  - Nested room structures instead of single groups
-  - Room directory to find rooms
-- Slack / Discord:
-  - Only one single client app (no choice
-  - Centralised servers (privacy)
-  - Instances can't be connected with each other -->
 
 ---
-### Who uses it?
-- Universities (ETH Zürich, Uni Hannover, Heidelberg, Berlin, and more)
-- Governments and agencies (German Bundeswehr, France, State of Schleswig-Holstein)
-- Open Source Communities (Mozilla, Gitter, KDE, and more)
+### Wer setzt es ein?
+- Universitäten (ETH Zürich, Uni Hannover, Heidelberg, Berlin)
+- Regierungen und Behörden (Bundeswehr, Franz. Regierung, Land Schleswig-Holstein, Gematik)
+- Open Source Communities (Mozilla, Gitter, KDE)
 
 ---
-### How can I use it?
-- Use any public server (e.g. matrix.org)
-- Most popular server: Synapse (Python)
-- Most popular client: Element (ehemals Riot.im)
-  - Multi-Platform (Web, Windows, Mac, Linux, Android, iOS)
-  - https://app.element.io/
+### Wie kann ich loslegen?
+- **Du musst keinen Server aufsetzen!**
+- Nutze öffentliche Server (z.B. matrix.org)
+- Beliebtester Client: Element
+  - Multi-Platform (Windows, Mac, Linux, Android, iOS)
+  - oder Web: https://app.element.io/
+
+---
+### Matrix @ VOW
+- Eigener Homeserver
+- Eigene Element-Instanz
+- Anmeldung über VOW-Account
+
+<div style="width: 100%; text-align:center; font-size:4rem; margin-top: 2rem;"><a href="https://vow.chat/">vow.chat</a></div>
