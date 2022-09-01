@@ -9,9 +9,15 @@ title: "How we built an Open Source Threema/Matrix bridge – and got paid for i
 > Matrix Community Summit</br>
 > Berlin – 26.8.2022
 
+Note:
+- Photos are okay
+- Project is Alpha – don't expect too much
+
 ---
 
 ## Live Demo
+
+![](images/threematrix-hero.png)<!-- .element height="350px" -->
 
 Join us at 
 
@@ -31,7 +37,8 @@ Join us at
     <img style="border-radius: 9999px; width: 200px; display: block;" src="images/moritz.jpg" />
     <strong>Moritz</strong><br/>
     <span style="font-size: 2rem; font-weight: 200;">Fullstack Developer<br/>
-    Freelancer</span>
+    Freelancer<br/>
+    @moritz:fabcity:hamburg</span>
   </div>
 </div>
 
@@ -92,7 +99,7 @@ Note:
 
 ---
 
-### Threemas Business Model
+### Threema's Business Model
 - 😤 No open/free API like Telegram/Signal <!-- .element: class="fragment" -->
 - Instead: Threema Gateway (Paid API product) <!-- .element: class="fragment" -->
   - 65€ setup fee
@@ -113,17 +120,18 @@ Note:
 - Why not reverse engineer the client? <!-- .element: class="fragment" -->
   - We ❤️ Threema and Open Source
   - Making money with OSS is hard
-  - Bridge uses their infrastructure
-  - Bridge allows automation -> much heavier usage than App
-- "Client model": We rip them off <!-- .element: class="fragment" -->
-- "Gateway model": They rip us off <!-- .element: class="fragment" -->
+  - <span style="text-decoration:underline">Our</span> bridge uses <span style="text-decoration:underline">their</span> infrastructure
+  - Bridge allows automation -> possibly heavier usage than App
+- "Client mode": We rip them off <!-- .element: class="fragment" -->
+- "Gateway mode": They rip us off <!-- .element: class="fragment" -->
 
 ---
 
 ### How do we solve it?
 - Talked to 👨🏻‍💼 Threema CEO about it <!-- .element: class="fragment" -->
-  - Understood our position 👊
+  - Understood our problem 👊
   - Don't hate our project 🥳
+  - Gave us credits for testing 🙏
 - They will think about solutions <!-- .element: class="fragment" -->
   - <span style="text-decoration:underline">Maybe</span> change their pricing model
 - No promises though – nothing might happen <!-- .element: class="fragment" -->
@@ -158,8 +166,8 @@ Note:
 
 ### Problems #1
 - 🤡 Threema Gateway product does not support group chats
-  - But it actually does – it's just not documented <!-- .element: class="fragment" -->
-  - We implemented group logic ourselves (planning to upstream) <!-- .element: class="fragment" -->
+  - But it actually does – it's just not documented
+  - We implemented group logic ourselves (planning to upstream to `threema-gateway-rs`)
 
 Note:
 - Asked Threema support for Group chats -> Nope
@@ -168,7 +176,6 @@ Note:
 - Group text messages are just single messages
 
 ---
-
 
 ### Problems #2
 - `matrix-rust-sdk` is still missing some features/buggy
@@ -182,3 +189,13 @@ Note:
 - Currently it's a bridge bot
 - Would like to convert it to App Service and use Puppeteering
 
+---
+
+### Thanks!
+- Follow us:
+  - Matrix: [#threema-bridge:matrix.org](https://matrix.to/#/#threema-bridge:matrix.org)
+  - GitHub: [github.com/bitbetterde/Threematrix](https://github.com/bitbetterde/Threematrix)
+  - Mastodon: [@threematrix@mastodon.social](https://mastodon.social/@threematrix)
+
+
+Note:
