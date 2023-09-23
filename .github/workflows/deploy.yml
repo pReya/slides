@@ -28,7 +28,7 @@ jobs:
       - name: Build static site
         run: reveal-md ./ --static _site
       - name: Upload output file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           name: github-pages
           path: _site
