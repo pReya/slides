@@ -1,3 +1,6 @@
+---
+title: "Threematrix Halftime Report"
+---
 # Threematrix
 
 ![](images/logo.png)<!-- .element height="200px" -->
