@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.reveal figcaption {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.reveal figure img {
+  margin-bottom: 0;
+}
+
+:root {
+  --r-heading1-size: 3rem;
+  --r-heading-font: 'Roboto', sans-serif;
+  --r-main-font: 'Roboto', sans-serif;
+  --r-heading-text-transform: "none";
+}
+
